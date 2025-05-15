@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-dash {
+  animation: dash 2s linear forwards;
+}
