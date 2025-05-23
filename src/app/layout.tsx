@@ -1,14 +1,43 @@
-// app/layout.tsx  ── Root layout for the App Router
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import './globals.css';           
+import './globals.css';
+import {
+  Inter,
+  Playfair_Display,
+  Space_Grotesk,
+  Poppins,
+  Fira_Code,
+} from 'next/font/google';
+
+// Google Fonts setup
+const inter = Inter(
+  { subsets: ['latin'], variable: '--font-inter' }
+);
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+});
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+});
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-poppins',
+});
+const firaCode = Fira_Code({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-fira',
+});
+
 export const metadata: Metadata = {
   title: {
     default: 'Priyanka Portfolio',
-    template: '',
+    template: '%s | Priyanka',
   },
-  description:
-   'Portfolio of Priyanka'
+  description: 'Portfolio of Priyanka',
 };
 
 export default function RootLayout({
@@ -16,11 +45,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const year = new Date().getFullYear(); // runs once per request on the server
+  const year = new Date().getFullYear();
 
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-[#FEE8E6]">
+    <html
+      lang="en"
+      className={`${inter.variable} ${playfair.variable} ${spaceGrotesk.variable} ${poppins.variable} ${firaCode.variable}`}
+    >
+      <body className=" min-h-screen bg-[#FEE8E6]">
         <div className="max-w-6xl mx-auto px-4 py-6">
           {/* ---------- Header / Navigation ---------- */}
           <header className="flex justify-between items-center mb-6">
@@ -44,33 +76,6 @@ export default function RootLayout({
 
           {/* ---------- Page content ---------- */}
           <main>{children}</main>
-
-          {/* ---------- Footer ---------- */}
-          <footer className="mt-24 pb-8 text-center text-gray-600 text-sm">
-            <div className="mb-6">
-              <div className="flex justify-center space-x-8">
-                <Link
-                  href="https://instagram.com/Priyankahuang"
-                  clasSaha="cursor-pointer hover:text-black"
-                >
-                  INSTAGRAM
-                </Link>
-                <Link
-                  href="https://twitter.com/juliahuang"
-                  className="cursor-pointer hover:text-black"
-                >
-                  TWITTER
-                </Link>
-                <Link
-                  href="https://linkedin.com/in/juliahuang"
-                  className="cursor-pointer hover:text-black"
-                >
-                  LINKEDIN
-                </Link>
-              </div>
-            </div>
-            <p>© {year} Julia Huang. All rights reserved.</p>
-          </footer>
         </div>
       </body>
     </html>

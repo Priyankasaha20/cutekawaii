@@ -7,7 +7,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        inter: ["var(--font-inter)"],
+        playfair: ["var(--font-playfair)"],
+        grotesk: ["var(--font-space-grotesk)"],
+        poppins: ["var(--font-poppins)"],
+        code: ["var(--font-fira)"],
       },
       colors: {
         "pale-pink": "#FEE8E6",

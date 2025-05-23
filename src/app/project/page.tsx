@@ -17,18 +17,6 @@ export default function Projects() {
       description: 'Interactive AI sculpture garden merging digital art with physical environments.',
       image: '/project-elara.jpg',
     },
-    {
-      id: 'verve',
-      title: 'Verve',
-      description: 'A collaborative AI system designed to enhance creative workflows in architectural design studios.',
-      image: '/project-verve.jpg',
-    },
-    {
-      id: 'zephyr',
-      title: 'Zephyr',
-      description: 'Experimental urban spaces transformed through computational design and machine learning.',
-      image: '/project-zephyr.jpg',
-    },
   ];
 
   return (
