@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#FEF7F7] to-[#FDE2E2]">
+    <div className="min-h-screen">
       <Head>
         <title>About - Priyanka Saha</title>
         <meta
@@ -27,54 +27,49 @@ export default function About() {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* About Me - Large Card */}
-          <div className="lg:col-span-8 bg-white/70 backdrop-blur-sm p-8 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div className="lg:col-span-8 bg-white/70 backdrop-blur-sm p-8 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md hover:-translate-y-2 transition-all duration-300">
             <h1 className="text-4xl font-bold mb-6 text-gray-800">About Me</h1>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               I'm a pre-final year Computer Science and Cloud Computing student passionate about web development.
               Over the past year, I've explored full-stack development and built production-ready applications like:
             </p>
             <div className="bg-pink-50/50 p-4 rounded-lg mb-6">
-              <ul className="space-y-3">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>
-                  <a 
-                    href="https://bookhive.firedevs.in/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-pink-700 hover:text-pink-800 font-medium underline decoration-pink-300 hover:decoration-pink-500 transition-colors"
-                  >
-                    BookHive
-                  </a>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>
-                  <a 
-                    href="https://coding-dashboard-ecru.vercel.app/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-pink-700 hover:text-pink-800 font-medium underline decoration-pink-300 hover:decoration-pink-500 transition-colors"
-                  >
-                    Coding Dashboard
-                  </a>
-                </li>
-              </ul>
+              
             </div>
             <p className="text-lg text-gray-700 leading-relaxed">
               I love creating with React, Next.js, and exploring how modern tools simplify developer workflows.
             </p>
           </div>
 
-          {/* Profile Image */}
-          <div className="lg:col-span-4 bg-gradient-to-br from-pink-100 to-pink-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 min-h-[300px] lg:min-h-[400px]">
-            <img
-              src="/about-image.jpg"
-              alt="Priyanka Saha"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-            />
-          </div>
+            {/* Experience & Resume */}
+            <div className="lg:col-span-4 bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md hover:-translate-y-2 transition-all duration-300">
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">Experience</h2>
+            <div className="border-l-4 border-pink-300 pl-4 mb-6">
+              <h3 className="font-semibold text-gray-800 text-lg mb-2">Web Developer - GDSC</h3>
+              <div className="space-y-1">
+              <p className="text-gray-600">•Executive (1 Months)</p>
+              <p className="text-gray-600">•Member(8 Months)</p>
+              </div>
+            </div>
+            
+            {/* Resume Section */}
+            <div className="pt-4 border-t border-pink-100">
+              <h2 className="font-bold text-gray-800 mb-3">Resume</h2>
+              <Link 
+              href="https://drive.google.com/file/d/1LHrw-KevjyvxIYIPjNircjgjbs_IxOlQ/view?usp=sharing" 
+              target="_blank"
+              className="inline-flex items-center text-black hover:text-pink-700 transition-colors duration-200"
+              >
+              <span className="text-sm font-medium">View Resume</span>
+              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              </Link>
+            </div>
+            </div>
 
           {/* Education */}
-          <div className="lg:col-span-4 bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div className="lg:col-span-6 bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md hover:-translate-y-2 transition-all duration-300">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Education</h2>
             <div className="space-y-6">
               <div className="border-l-4 border-pink-300 pl-4">
@@ -90,20 +85,8 @@ export default function About() {
             </div>
           </div>
 
-          {/* Experience */}
-          <div className="lg:col-span-4 bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800">Experience</h2>
-            <div className="border-l-4 border-pink-300 pl-4">
-              <h3 className="font-semibold text-gray-800 text-lg mb-2">Web Developer - GDSC</h3>
-              <div className="space-y-1">
-                <p className="text-gray-600">• 8 months as member</p>
-                <p className="text-gray-600">• 1 month as executive</p>
-              </div>
-            </div>
-          </div>
-
           {/* Skills */}
-          <div className="lg:col-span-4 bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div className="lg:col-span-6 bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md hover:-translate-y-2 transition-all duration-300">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Skills</h2>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-3">

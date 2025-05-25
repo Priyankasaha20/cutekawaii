@@ -6,16 +6,18 @@ import { ArrowUpRight, ArrowLeft } from 'lucide-react';
 export default function Projects() {
   const projects = [
     {
-      id: 'musea',
-      title: 'Musea',
-      description: 'An AI-driven architecture experience that redefines spatial design through machine learning algorithms.',
-      image: '/project-musea.jpg',
+      id: 'bookhive',
+      title: 'BookHive',
+      description: 'A full-stack e-commerce website for selling and purchasing books. Built with Express, MongoDB, TailwindCSS, Multer, and EJS.',
+      image: './image.png',
+      link: 'https://bookhive.firedevs.in/',
     },
     {
-      id: 'elara',
-      title: 'Elara',
-      description: 'Interactive AI sculpture garden merging digital art with physical environments.',
-      image: '/project-elara.jpg',
+      id: 'coding-dashboard',
+      title: 'Coding Dashboard',
+      description: 'A simple frontend website with custom design elements. Built using Next.js and TailwindCSS.',
+      image: './image2.png',
+      link: 'https://coding-dashboard-ecru.vercel.app/',
     },
   ];
 
@@ -42,9 +44,9 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <Link key={project.id} href={`/projects/${project.id}`}>
-              <div className="bg-[#FFECE9] rounded-lg overflow-hidden cursor-pointer group">
-                <div className="h-64 bg-[#E0CFC7] relative">
+            <a key={project.id} href={project.link} target="_blank" rel="noopener noreferrer">
+              <div className="bg-[#FFECE9] rounded-lg overflow-hidden cursor-pointer group transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <div className="h-76 bg-[#E0CFC7] relative">
                   <img 
                     src={project.image} 
                     alt={project.title} 
@@ -59,7 +61,7 @@ export default function Projects() {
                   <p className="text-gray-700">{project.description}</p>
                 </div>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>

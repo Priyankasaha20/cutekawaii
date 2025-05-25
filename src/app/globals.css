@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 @layer base {
   body {
     @apply antialiased text-gray-900;
@@ -16,4 +14,13 @@
 
 .animate-dash {
   animation: dash 2s linear forwards;
+}
+@layer base {
+  :root {
+    --font-poppins: "Poppins", sans-serif;
+  }
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
 }

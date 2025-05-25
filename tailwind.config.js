@@ -1,17 +1,10 @@
 // tailwind.config.js
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        inter: ["var(--font-inter)"],
-        playfair: ["var(--font-playfair)"],
-        grotesk: ["var(--font-space-grotesk)"],
         poppins: ["var(--font-poppins)"],
-        code: ["var(--font-fira)"],
       },
       colors: {
         "pale-pink": "#FEE8E6",

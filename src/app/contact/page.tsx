@@ -70,13 +70,13 @@ export default function Contact() {
             <div>
               <h3 className="text-xl font-medium mb-4">Connect</h3>
               <div className="flex space-x-6">
-                <Link href="https://instagram.com/juliahuang">
+                <Link href="https://www.instagram.com/tooloudbitch/">
                   <span className="text-gray-700 hover:text-black cursor-pointer">Instagram</span>
                 </Link>
-                <Link href="https://twitter.com/juliahuang">
+                <Link href="https://x.com/PriyankaSaha88">
                   <span className="text-gray-700 hover:text-black cursor-pointer">Twitter</span>
                 </Link>
-                <Link href="https://linkedin.com/in/juliahuang">
+                <Link href="https://www.linkedin.com/in/priyanka-saha-03a8b5267/">
                   <span className="text-gray-700 hover:text-black cursor-pointer">LinkedIn</span>
                 </Link>
               </div>

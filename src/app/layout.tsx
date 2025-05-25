@@ -1,36 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import './globals.css';
-import {
-  Inter,
-  Playfair_Display,
-  Space_Grotesk,
-  Poppins,
-  Fira_Code,
-} from 'next/font/google';
+import { Poppins } from 'next/font/google';
 
-// Google Fonts setup
-const inter = Inter(
-  { subsets: ['latin'], variable: '--font-inter' }
-);
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair',
-});
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-space-grotesk',
-});
+
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '600'],
-  variable: '--font-poppins',
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-poppins",
 });
-const firaCode = Fira_Code({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-fira',
-});
+
 
 export const metadata: Metadata = {
   title: {
@@ -49,16 +28,14 @@ export default function RootLayout({
 
   return (
     <html
-      lang="en"
-      className={`${inter.variable} ${playfair.variable} ${spaceGrotesk.variable} ${poppins.variable} ${firaCode.variable}`}
-    >
-      <body className=" min-h-screen bg-[#FEE8E6]">
-        <div className="max-w-6xl mx-auto px-4 py-6">
+      lang="en">
+      <body className="{`${poppins.variable}  min-h-screen bg-[#FEE8E6]">
+        <div className="max-w-6xl mx-auto px-4 py-6  font-poppins">
           {/* ---------- Header / Navigation ---------- */}
           <header className="flex justify-between items-center mb-6">
-            <h1 className="font-semibold text-xl">
+            <h1 className="font-poppins text-xl">
               <Link href="/" className="cursor-pointer">
-                Priyanka <span className="font-bold">Saha</span>
+                Priyanka <span className="">Saha</span>
               </Link>
             </h1>
             <nav className="flex space-x-8">

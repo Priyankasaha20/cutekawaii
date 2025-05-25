@@ -2,13 +2,14 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpLeft } from 'lucide-react';
 
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr font-poppins">
   {/* Hero Card */}
-  <div className="md:col-span-2 bg-pink-50 p-10 rounded-lg relative flex flex-col justify-between h-full">
+  <div className="md:col-span-2  bg-pink-50 p-10 rounded-lg relative flex flex-col justify-between h-full">
     <div>
       <h1 className="text-4xl md:text-5xl font-semibold italic mb-2">
         Trying Development,
@@ -38,7 +39,7 @@ export default function Home() {
   {/* Profile Card */}
   <div className="bg-[#E0CFC7] rounded-lg flex items-center justify-center overflow-hidden">
     <img
-      src="/profile-image.jpg"
+      src="./portfolio.jpg"
       alt="Priyanka Saha"
       className="w-full h-full object-cover"
     />
@@ -47,17 +48,17 @@ export default function Home() {
   {/* Bio Card */}
   <div className="bg-[#FFECE9] p-6 rounded-lg flex flex-col justify-center">
     <div className="w-10 h-10 mb-4">
-      <div className="w-8 h-8 border-2 border-[#FF9E9E] rounded-full"></div>
+      <div className="w-8 h-8 border-2 border-[#FF9E9E] rounded-full "></div>
     </div>
-    <ul className="text-sm list-disc list-inside space-y-2">
+    <ul className="text-sm list-disc list-inside space-y-2 font-2xl">
       <li>
-        <strong>Background:</strong> B.Tech (CSE + Cloud Computing), 1.5+ years real-world dev.
+        <strong>Experience:</strong> Full-stack developer with 1.5+ years building scalable web applications.
       </li>
       <li>
-        <strong>Philosophy:</strong> Ship fast, refactor often, and document well.
+        <strong>Stack:</strong> React, Node.js, TypeScript, and modern cloud architectures.
       </li>
       <li>
-        <strong>Current focus:</strong> Next.js, server actions, and typed AI tooling.
+        <strong>Approach:</strong> End-to-end development from database design to user interfaces.
       </li>
     </ul>
   </div>
@@ -67,7 +68,7 @@ export default function Home() {
     <Link href="/contact">
       <div className="cursor-pointer h-full flex flex-col justify-between">
         <div className="flex justify-between">
-          <p className="text-sm">Have some questions?</p>
+          <p className="text-lg">Have some questions?</p>
           <ArrowUpRight className="text-black transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
         </div>
         <h3 className="text-3xl font-medium mt-16">Contact me</h3>
@@ -78,26 +79,27 @@ export default function Home() {
   {/* Projects Card */}
   <div className="md:col-span-1 bg-[#FFECE9] p-4 rounded-lg flex flex-col justify-between">
     <div>
-      <div className="flex justify-between items-center mb-6">
-        <h3 className="font-medium text-xl">Musea</h3>
-        <ArrowUpRight className="text-black" />
+      <div className="flex justify-end items-center mb-6">
+        
       </div>
       <Link href="/project">
         <div className="cursor-pointer mb-6">
           <div className="aspect-[4/3] bg-white rounded-lg overflow-hidden mb-2">
             <img
-              src="/project-image.jpg"
+              src="/image2.png"
               alt="Musea Project"
               className="w-full h-full object-cover"
             />
+            
           </div>
+          <ArrowUpRight className="text-black transform hover:translate-x-1 hover:-translate-y-1 transition-transform" />
         </div>
       </Link>
     </div>
-    <div className="border-t border-gray-300 pt-4">
+    <div className="border-t border-gray-500 pt-4">
       <Link href="/project">
         <h3 className="font-medium text-xl cursor-pointer hover:text-gray-700">
-          Elara
+          BookHive
         </h3>
       </Link>
     </div>
