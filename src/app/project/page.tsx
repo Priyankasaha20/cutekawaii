@@ -10,14 +10,14 @@ export default function Projects() {
       id: 'bookhive',
       title: 'BookHive',
       description: 'A full-stack e-commerce website for selling and purchasing books. Built with Express, MongoDB, TailwindCSS, Multer, and EJS.',
-      image: './image.png',
+      image: '/image.png',
       link: 'https://bookhive.firedevs.in/',
     },
     {
       id: 'coding-dashboard',
       title: 'Coding Dashboard',
       description: 'A simple frontend website with custom design elements. Built using Next.js and TailwindCSS.',
-      image: './image2.png',
+      image: '/image2.png',
       link: 'https://coding-dashboard-ecru.vercel.app/',
     },
   ];
@@ -30,8 +30,6 @@ export default function Projects() {
       </Head>
 
       <div className="max-w-6xl mx-auto px-4 py-6">
-      
-
         <div className="mb-8">
           <Link href="/">
             <div className="flex items-center text-gray-600 hover:text-black cursor-pointer">
@@ -51,6 +49,8 @@ export default function Projects() {
                   <Image
                     src={project.image} 
                     alt={project.title} 
+                    width={500}       
+                    height={500} 
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">

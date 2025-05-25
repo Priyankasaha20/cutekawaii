@@ -38,8 +38,10 @@ export default function Home() {
   {/* Profile Card */}
   <div className="bg-[#E0CFC7] rounded-lg flex items-center justify-center overflow-hidden">
     <Image
-      src="./portfolio.jpg"
+      src="/portfolio.jpg"
       alt="Priyanka Saha"
+      width={500}
+  height={500}
       className="w-full h-full object-cover"
     />
   </div>
@@ -88,8 +90,10 @@ export default function Home() {
               src="/image2.png"
               alt="Musea Project"
               className="w-full h-full object-cover"
+              width={500}
+              height={300} 
             />
-            
+           
           </div>
           <ArrowUpRight className="text-black transform hover:translate-x-1 hover:-translate-y-1 transition-transform" />
         </div>
