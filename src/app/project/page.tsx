@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { ArrowUpRight, ArrowLeft } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Projects() {
   const projects = [
@@ -47,7 +48,7 @@ export default function Projects() {
             <a key={project.id} href={project.link} target="_blank" rel="noopener noreferrer">
               <div className="bg-[#FFECE9] rounded-lg overflow-hidden cursor-pointer group transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <div className="h-76 bg-[#E0CFC7] relative">
-                  <img 
+                  <Image
                     src={project.image} 
                     alt={project.title} 
                     className="w-full h-full object-cover"

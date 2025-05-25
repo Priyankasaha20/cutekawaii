@@ -3,10 +3,12 @@ import Link from 'next/link';
 import './globals.css';
 import { Poppins } from 'next/font/google';
 
-const poppins = Poppins(
-  { subsets: ['latin'],
-   weight: ['400', '600'] }
-);
+// Corrected: Added variable key to Poppins config or use className
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-poppins',  // Added this line if you want to use poppins.variable
+});
 
 export const metadata: Metadata = {
   title: {
@@ -21,12 +23,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
-
   return (
-    <html
-      lang="en">
-      <body className="{`${poppins.variable}  min-h-screen bg-[#FEE8E6]">
+    <html lang="en">
+      <body className={`${poppins.variable} min-h-screen bg-[#FEE8E6]`}>
         <div className="max-w-6xl mx-auto px-4 py-6 font-poppins">
           {/* ---------- Header / Navigation ---------- */}
           <header className="flex justify-between items-center mb-6">
