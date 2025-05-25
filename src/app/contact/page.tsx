@@ -36,7 +36,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FEE8E6]">
+    <div className="min-h-screen bg-[#FEE8E6] {poppins.className}">
       <Head>
         <title>Contact - Julia Huang</title>
         <meta name="description" content="Get in touch with Julia Huang" />

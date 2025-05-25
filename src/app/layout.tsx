@@ -3,7 +3,10 @@ import Link from 'next/link';
 import './globals.css';
 import { Poppins } from 'next/font/google';
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600'] });
+const poppins = Poppins(
+  { subsets: ['latin'],
+   weight: ['400', '600'] }
+);
 
 export const metadata: Metadata = {
   title: {
