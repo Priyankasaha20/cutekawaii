@@ -58,7 +58,7 @@ export default function Contact() {
           <div>
             <h1 className="text-4xl font-bold mb-6">Get in touch</h1>
             <p className="mb-8 text-lg">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+              I&rsquo;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
             </p>
             
             <div className="mb-8">
@@ -92,7 +92,7 @@ export default function Contact() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-medium mb-2">Message Sent!</h3>
-                <p className="text-gray-600">Thank you for reaching out. I'll get back to you soon.</p>
+                <p className="text-gray-600">Thank you for reaching out. I&rsquo;ll get back to you soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">

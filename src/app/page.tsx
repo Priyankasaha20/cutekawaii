@@ -1,6 +1,6 @@
-
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
+import Image from 'next/image';
 
 
 
@@ -37,7 +37,7 @@ export default function Home() {
 
   {/* Profile Card */}
   <div className="bg-[#E0CFC7] rounded-lg flex items-center justify-center overflow-hidden">
-    <img
+    <Image
       src="./portfolio.jpg"
       alt="Priyanka Saha"
       className="w-full h-full object-cover"
@@ -47,7 +47,7 @@ export default function Home() {
   {/* Bio Card */}
   <div className="bg-[#FFECE9] p-6 rounded-lg flex flex-col justify-center">
     <div className="w-10 h-10 mb-6">
-      <div className="w-8 h-8 border-2 border-[#FF9E9E] rounded-full ml-2 mt-2"></div>
+      <div className="w-8 h-8 border-2 border-[#FF9E9E] rounded-full ml-2 mt-2 font-poppins"></div>
     </div>
     <ul className="text-sm list-disc list-inside space-y-4 font-medium">
       <li>
@@ -84,7 +84,7 @@ export default function Home() {
       <Link href="/project">
         <div className="cursor-pointer mb-6">
           <div className="aspect-[4/3] bg-white rounded-lg overflow-hidden mb-2">
-            <img
+            <Image
               src="/image2.png"
               alt="Musea Project"
               className="w-full h-full object-cover"

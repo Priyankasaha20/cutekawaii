@@ -30,14 +30,14 @@ export default function About() {
           <div className="lg:col-span-8 bg-white/70 backdrop-blur-sm p-8 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md hover:-translate-y-2 transition-all duration-300">
             <h1 className="text-4xl font-bold mb-6 text-gray-800">About Me</h1>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              I'm a pre-final year Computer Science and Cloud Computing student passionate about web development.
-              Over the past year, I've explored full-stack development and built production-ready applications like:
+              I&rsquo;m a pre-final year Computer Science &apos Cloud Computing student passionate about web development.
+              Over the past year, I&rsquo;ve explored full-stack development &apos built production-ready applications like:
             </p>
             <div className="bg-pink-50/50 p-4 rounded-lg mb-6">
               
             </div>
             <p className="text-lg text-gray-700 leading-relaxed">
-              I love creating with React, Next.js, and exploring how modern tools simplify developer workflows.
+              I love creating with React, Next.js, &apos exploring how modern tools simplify developer workflows.
             </p>
           </div>
 
