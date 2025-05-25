@@ -47,10 +47,10 @@ export default function Home() {
 
   {/* Bio Card */}
   <div className="bg-[#FFECE9] p-6 rounded-lg flex flex-col justify-center">
-    <div className="w-10 h-10 mb-4">
-      <div className="w-8 h-8 border-2 border-[#FF9E9E] rounded-full "></div>
+    <div className="w-10 h-10 mb-6">
+      <div className="w-8 h-8 border-2 border-[#FF9E9E] rounded-full ml-2 mt-2"></div>
     </div>
-    <ul className="text-sm list-disc list-inside space-y-2 font-2xl">
+    <ul className="text-sm list-disc list-inside space-y-4 font-medium">
       <li>
         <strong>Experience:</strong> Full-stack developer with 1.5+ years building scalable web applications.
       </li>
