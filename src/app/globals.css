@@ -1,19 +1,86 @@
 @import "tailwindcss";
 
-@layer base {
-  body {
-    @apply antialiased text-gray-900;
-  }
-}
-
 @keyframes dash {
-  to {
+  0% {
+    stroke-dashoffset: 283;
+  }
+
+  50% {
+    stroke-dashoffset: 141;
+  }
+
+  100% {
     stroke-dashoffset: 0;
   }
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Utility classes */
 .animate-dash {
-  animation: dash 2s linear forwards;
+  animation: dash 2s ease-in-out infinite alternate;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Improved text rendering */
+.font-poppins {
+  font-optical-sizing: auto;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 182, 193, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 158, 158, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 158, 158, 0.5);
+}
+
+/* Enhanced focus states for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #FF9E9E;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 @layer base {
   :root {
