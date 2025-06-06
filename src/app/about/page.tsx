@@ -56,7 +56,7 @@ export default function About() {
             <div className="pt-4 border-t border-pink-100">
               <h2 className="font-bold text-gray-800 mb-3">Resume</h2>
               <Link 
-              href="https://drive.google.com/file/d/1LHrw-KevjyvxIYIPjNircjgjbs_IxOlQ/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1mQ7QCw-K35s6okuT1-oo9LIj2InGtqGH/view?usp=sharing" 
               target="_blank"
               className="inline-flex items-center text-black hover:text-pink-700 transition-colors duration-200"
               >
