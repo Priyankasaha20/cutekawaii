@@ -4,8 +4,14 @@ import Link from 'next/link';
 import { ArrowUpRight, ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
 
-export default function Projects() {
-  const projects = [
+export default function Projects() {  const projects = [
+    {
+      id: 'codequest',
+      title: 'CodeQuest',
+      description: 'An online coding platform currently under development. Built with Judge0 API for code execution, Node.js backend, Next.js frontend, and MongoDB database.',
+      image: '/image3.png',
+      link: 'https://codequest-teal.vercel.app/',
+    },
     {
       id: 'bookhive',
       title: 'BookHive',
